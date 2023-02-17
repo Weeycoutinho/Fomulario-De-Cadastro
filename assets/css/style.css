@@ -1,29 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    padding: 0; /*espaço do diâmetro do nosso itens*/
+    margin: 0; /*margen do elementos*/
+    box-sizing: border-box; /*usada para calcular larguras (widths) e alturas (heights) dos elementos*/
+    font-family: 'Roboto', sans-serif; /*fonte*/
 }
 
 body {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 100%;/*Largura*/
+    height: 100vh; /*altura*/
+    display: flex; /*flex container, a partir daí podemos manipular todos os elementos filhos desse flex container com propriedades novas.*/
+    justify-content: center; /*justify-content define como o navegador distribui o espaço entre e ao redor dos itens de conteúdo ao longo do eixo principal*/
+    align-items: center; /*define o comportamento padrão de como os itens são dispostos ao longo do eixo transversal*/
     background: #050633;
 }
 
 .container {
-    width: 80%;
-    height: 80vh;
-    display: flex;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, .212)    ;
+    width: 80%; /*Largura*/
+    height: 80vh; /*altura*/
+    display: flex; /*flex container, a partir daí podemos manipular todos os elementos filhos desse flex container com propriedades novas.*/
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .212); /*sombra*/
 }
 
 .form-image {
-    width: 50%;
+    width: 50%; /*Largura*/
     display: flex;
     justify-content: center;
     background-color: orange;
@@ -45,7 +45,7 @@ body {
 }
 
 .form-header {
-    margin-bottom: 3rem;
+    margin-bottom: 3rem; /*margin-bottom define a margin area na parte inferior de um elemento.*/
     display: flex;
     justify-content: space-between
 }
@@ -56,11 +56,11 @@ align-items: center;
 }
 
 .login-button button {
-    border: none;
+    border: none; /* bordas aplicadas no estilo em cascatas*/
     background-color: #050633;
     padding: 0.4rem 1rem;
     border-radius: 5px;
-    cursor: pointer;
+    cursor: pointer; /*O cursor é um ponteiro que indica um link*/
 }
 
 .login-button button:hover {
@@ -68,13 +68,13 @@ align-items: center;
 }
 
 .login-button button a {
-    text-decoration: none;
+    text-decoration: none; /*text-decoration especifica a decoração adicionada ao texto e é uma propriedade*/
     font-weight: 500;
     color: #fff;
 }
 
 .form-header h1::after {
-    content: '' ;
+    content: '' ; /*substitui um elemento por um valor gerado*/
     display: block;
     width: 5rem;
     height: 0.3rem;
@@ -86,7 +86,7 @@ align-items: center;
 
 .input-group {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /*flex-wrap define se os itens flexíveis são forçados a ficarem na mesma linha ou se podem ser quebradas em varias linhas*/
     justify-content: space-between;
     padding: 1rem 0;
 }
@@ -110,7 +110,7 @@ align-items: center;
 }
 
 .input-box input:focus-visible {
-    outline: 1px solid orange;
+    outline: 1px solid orange; /*é uma propriedade abreviada para configurar uma ou mais das propriedades de contorno*/
 }
 
 .input-box label,
@@ -167,7 +167,7 @@ background-color: black;
     color: #fff;
 }
 
-@media screen and (max-width: 1330px) {
+@media screen and (max-width: 1330px) { /* pode aplicar um conjunto de estilos se o dispositivo de visualização*/
     
     .form-image {
     display: none;
